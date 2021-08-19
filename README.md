@@ -42,3 +42,5 @@ api/products/{id} DELETE - delete product [auth]
 Testing ```php artisan test```
 
 it used separate database, please refer ```.env.testing```
+
+added postman collection file to the code, might need to setup ```base_url``` 
