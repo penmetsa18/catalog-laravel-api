@@ -1,0 +1,186 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Catalog",
+		"_postman_id": "539233da-68a6-4828-934c-1eeb9c25d286",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": "{{base_url}}/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "tam@kadonation.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get categories",
+			"request": {
+				"url": "{{base_url}}/categories",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get products",
+			"request": {
+				"url": "{{base_url}}/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get product",
+			"request": {
+				"url": "localhost/api/products/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Store product",
+			"request": {
+				"url": "{{base_url}}/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 4|6Jbqw8IomkSd3fxfTc9PSKomojOMbASNAmrUgELg",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Project Cars 3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "A0005",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "59.99",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"url": "{{base_url}}/products/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 4|6Jbqw8IomkSd3fxfTc9PSKomojOMbASNAmrUgELg",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Sony UHD HDR 55\" 4k TV",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"url": "{{base_url}}/products/6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|f2iNlhffAiDAKLnW7SiMISvrXIO49KyhEdEEqcBW",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
